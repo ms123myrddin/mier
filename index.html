@@ -19,7 +19,10 @@
       <div id="projects" class="Phones Phones--three">
         <div class="Phone"><iframe id="inlineFrameExample" scrolling="no" title="Inline Frame Example" width="100%" height="100%" src="https://restaurantvillaborghese.be/contact.html"></iframe></div>
         <div class="Phone"><iframe id="inlineFrameExample" scrolling="no" title="Inline Frame Example" width="100%" height="100%" src="https://kinechristinegodefroid.com"></iframe></div>
-        <div  onclick="blog()" class="Phone"><iframe id="inlineFrameExample" scrolling="no" title="Inline Frame Example" width="100%" height="100%" src="http://androidsblog.c1.biz"></iframe></a></iframe></div>
+        <div class="Phone">
+          <img src="./img/logo.png" />
+          <p>this may be yours</p>
+        </div>
       </div>
     </div>
   </div>
@@ -179,7 +182,23 @@ h6 {
 }
 .Phone img {
   display: block;
-  width: 100%;
+  width: auto;
+  height: 15%;
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+.Phone p{
+  font-size: 33;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
 }
 .Phone--landscape {
   width: 31.5rem;
