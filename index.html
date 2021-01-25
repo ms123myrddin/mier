@@ -18,9 +18,9 @@
     </div>
     <div class="Container Container--spaced">
       <div id="projects" class="Phones Phones--three">
-        <div class="Phone"><iframe id="inlineFrameExample" scrolling="no" title="Inline Frame Example" width="100%" height="100%" src="https://restaurantvillaborghese.be/contact.html"></iframe></div>
-        <div class="Phone"><img src="./img/villa.jpg"/><a target="_blank" href="https://restaurantvillaborghese.be"class="yours">villa borghese</a></div>
-        <div class="Phone"><img class="yours" src="./img/logo.png" /><p>this may be yours</p></div>
+        <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
+        <div class="Phone"><a target="_blank" href="https://restaurantvillaborghese.be" >villa borghese</a><img src="./img/villa.jpg"/></div>
+        <div class="Phone"><p>this may be yours</p><img class="yours" src="./img/logo.png" /></div>
       </div>
     </div>
   </div>
@@ -39,6 +39,13 @@
   font-family: 'Varela Round', sans-serif;
   background-color: #f2f2f2;
   color: #222;
+}
+::-webkit-scrollbar {
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #e66465 0%, #9198e5 100%);
+    width: 3px;
 }
 * {
   box-sizing: border-box;
@@ -181,11 +188,11 @@ h6 {
 }
 .Phone img {
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;
   position: relative;
   left: 50%;
-  top: 0%;
+  top: 25%;
   transform: translateX(-50%);
 }
 .Phone .yours {
@@ -201,7 +208,7 @@ h6 {
   font-size: 33;
   position: relative;
   left: 50%;
-  top: 50%;
+  top: 0%;
   transform: translateX(-50%);
   z-index: 99;
   background: -webkit-linear-gradient(#e66465, #9198e5);
@@ -301,6 +308,16 @@ h6 {
   background: #0783ff;
   border: 1px solid #0783ff;
   color: #e6e6e6;
+}
+.Phone a{
+  font-size: 30;
+  position: absolute;
+  top: 10%;
+  padding-bottom: 5%;
+  transform: translateX(-50%);
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
   </style>
   <script>
