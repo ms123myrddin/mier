@@ -1,4 +1,7 @@
-    <div class="Container Container--spaced">
+    <?php 
+require_once("../header.html")
+?>
+<div class="Container Container--spaced">
       <div id="projects" class="Phones Phones--three">
         <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
         <div class="Phone"><a target="_blank" href="https://restaurantvillaborghese.be/" >villa borghese</a><img src="./img/villa.jpg"/></div>
