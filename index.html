@@ -1,0 +1,328 @@
+
+<div class="Header">
+    <div class="Container Container--full Container--spread Header-container">
+      <div class="Logo"></div>
+      <ul class="Menu">
+        <li class="Menu-item"><a href="#">Home</a></li>
+        <li class="Menu-item"><a href="#">About</a></li>
+        <li class="Menu-item"><a href="#">Sign up</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="Hero">
+    <div class="Hero-container">
+      <h1 class="Hero-title">Not Just Another Developer</h1>
+      <div class="Hero-actions"><a href="#projects"class="Button Button--primary">projects</a></div>
+    </div>
+    <div class="Container Container--spaced">
+        <div id="projects" class="Phones Phones--three">
+          <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
+          <div class="Phone"><a target="_blank" href="https://restaurantvillaborghese.be/" >villa borghese</a><img src="./img/villa.jpg"/></div>
+          <div class="Phone"><p>this may be yours</p><img class="yours" src="./img/logo.png" /><a class="contact"href="mailto:contact.mier.dev@gmail.com">contact</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="Features">
+      <div class="Container">
+        <div class="Feature"></div>
+        <div class="Feature"></div>
+        <div class="Feature"></div>
+      </div>
+    </div>
+    <div class="Footer">
+      <div class="Container"></div>
+    </div>  
+  <style>
+            body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
+}
+::-webkit-scrollbar {
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #e66465 0%, #9198e5 100%);
+    width: 3px;
+}
+* {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+.Container {
+  padding: 0 1rem;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.Container--spread {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Container--full {
+  max-width: 100%;
+}
+.Container--spaced {
+  margin: 3rem auto;
+}
+.Header-container {
+  height: 6rem;
+}
+.Hero {
+  text-align: center;
+}
+.Hero-container {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.Hero-title {
+  font-size: 2.8rem;
+  margin: 0;
+}
+.Hero-subtitle {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+}
+.Hero-actions {
+  margin: 3rem 0;
+}
+.Hero-image {
+  text-align: center;
+}
+.Hero-image img {
+  max-width: 100%;
+}
+.Menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Menu-item {
+  display: inline-block;
+}
+.Menu-item a,
+.Menu-item a:visited {
+  padding: 0.5rem 0.5rem;
+  text-decoration: none;
+  color: #999;
+}
+.Menu-item a:hover,
+.Menu-item a:visited:hover {
+  color: #666;
+}
+.Browser {
+  display: inline-block;
+  margin: 0 auto;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+  background-color: #fff;
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+.Browser-header {
+  background-color: #d5d5d5;
+  padding: 0.3rem 0.5rem;
+}
+.Browser-header::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.Browser-btn {
+  display: block;
+  float: left;
+  padding: 0.9%;
+  border-radius: 100%;
+  background: #fff;
+  margin: 0.2rem;
+}
+.Browser-content {
+  padding: 0.9rem;
+}
+.Browser-content img {
+  display: block;
+  width: 100%;
+}
+.Phone {
+  position: relative;
+  width: 15rem;
+  height: 31.5rem;
+  padding: 3.5rem 0.75rem 4rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 5px 50px rgba(0,0,0,0.15);
+}
+.Phone::before,
+.Phone::after {
+  display: block;
+  left: 50%;
+  position: absolute;
+  content: '';
+}
+.Phone::before {
+  top: 1.7rem;
+  width: 2rem;
+  height: 0.2rem;
+  margin-left: -1rem;
+  background: linear-gradient(to right, #e66465 0%, #9198e5 100%);
+}
+.Phone::after {
+  border: 2px solid #eee;
+  background-image: linear-gradient(to bottom, #fff 0%, #eee 100%);
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  bottom: 1.1rem;
+  margin-left: -0.9rem;
+}
+.Phone img {
+  display: block;
+  width: 90%;
+  height: auto;
+  position: relative;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
+.Phone .yours {
+  display: block;
+  width: auto;
+  height: 15%;
+  position: relative;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+}
+.Phone p{
+  font-size: 33;
+  position: relative;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  z-index: 99;
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+}
+.Phone--landscape {
+  width: 31.5rem;
+  height: 15rem;
+  padding: 0.75rem 4rem 0.75rem 3.5rem;
+}
+.Phone--landscape::before,
+.Phone--landscape::after {
+  top: 50%;
+}
+.Phone--landscape::before {
+  left: 2.6rem;
+  width: 0.2rem;
+  height: 2rem;
+  margin-top: -1rem;
+}
+.Phone--landscape::after {
+  left: auto;
+  border: 2px solid #eee;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 100%;
+  right: 1.1rem;
+  margin-top: -0.9rem;
+}
+.Phones {
+  position: relative;
+  text-align: center;
+}
+.Phones .Phone {
+  display: inline-block;
+}
+.Phones--three .Phone {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+.Phones--three .Phone:nth-child(1) {
+  margin-left: -21rem;
+}
+.Phones--three .Phone:nth-child(2) {
+  margin-left: -7.5rem;
+  z-index: 2;
+}
+.Phones--three .Phone:nth-child(3) {
+  margin-left: 6rem;
+}
+
+.Phones--three .Phone:nth-child(1),
+.Phones--three .Phone:nth-child(3) {
+  background: #f7f7f7;
+  transform: scale3d(0.9, 0.9, 1);
+}
+.Phones--two .Phone {
+  display: block;
+  position: absolute;
+  left: 50%;
+}
+.Phones--two .Phone--front {
+  z-index: 2;
+}
+.Phones--two .Phone:nth-child(1) {
+  margin-left: -21rem;
+}
+.Phones--two .Phone:nth-child(2) {
+  margin-left: -7rem;
+  top: 10rem;
+}
+.Button {
+  margin: 0 0.125rem;
+  padding: 1.2rem 1.7rem;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  border: 1px solid #48a4ff;
+  color: #48a4ff;
+}
+.Button:hover {
+  background: #eee;
+}
+.Button:active {
+  background: #e7e7e7;
+}
+.Button--primary {
+  background: #48a4ff;
+  color: #fff;
+}
+.Button--primary:hover {
+  background: #2794ff;
+  border: 1px solid #2794ff;
+}
+.Button--primary:active {
+  background: #0783ff;
+  border: 1px solid #0783ff;
+  color: #e6e6e6;
+}
+.Phone a{
+  font-size: 30;
+  position: absolute;
+  top: 10%;
+  padding-bottom: 5%;
+  transform: translateX(-50%);
+  background: -webkit-linear-gradient(#e66465, #9198e5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Phone .contact{
+  position: relative;
+  bottom: 7%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+  </style>
