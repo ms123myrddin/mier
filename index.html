@@ -17,7 +17,24 @@
     <div class="Container Container--spaced">
         <div id="projects" class="Phones Phones--three">
           <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
-          <div class="Phone"><a target="_blank" href="https://restaurantvillaborghese.be/" >villa borghese</a><img src="./img/villa.jpg"/></div>
+          <div class="Phone"><a onclick="villaborghese()" onload="villaborghese() , villaborghese()">villa borghese</a><img src="./img/villa.jpg"/>
+            <div id="villaborghese"class="browser">
+  
+              <div class="browser-top">   
+                <div class="circle-div">
+                  <div class="circle red-circle"></div>
+                  <div class="circle yellow-circle"></div>
+                  <div class="circle green-circle"></div>
+                </div>   <!-- END CIRCLE DIV -->
+                
+                <div class="browser-ui-block">
+                  <div class="arrow-buttons"></div>
+                  <div class="search-box"></div>
+                </div>   <!-- /END BROWSER UI BLOCK -->  
+              </div>  <!-- /END BROWSER TOP -->
+              <iframe src="https://restaurantvillaborghese.be/"></iframe>
+            </div>   <!-- /END BROWSER -->
+          </div>
           <div class="Phone"><p>this may be yours</p><img class="yours" src="./img/logo.png" /><a class="contact"href="mailto:contact.mier.dev@gmail.com">contact</a></div>
         </div>
       </div>
@@ -208,7 +225,7 @@ h6 {
   left: 50%;
   top: 0%;
   transform: translateX(-50%);
-  z-index: 99;
+  z-index: 3;
   background: -webkit-linear-gradient(#e66465, #9198e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
@@ -316,6 +333,7 @@ h6 {
   background: -webkit-linear-gradient(#e66465, #9198e5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 .Phone .contact{
   position: relative;
@@ -324,5 +342,103 @@ h6 {
 html {
   scroll-behavior: smooth;
 }
-
+body {
+  background-color: #BBE690;
+}
+.browser-border {
+  border: 6px solid #E7ECF2;
+  border-radius: 6px;
+}
+.browser-ui-element {
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #E7ECF2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+.browser {
+  margin: 20px auto 0;
+  position: absolute;
+  top: 100%;
+  width: 400px;
+  height: 400px;
+  border: 6px solid #E7ECF2;
+  display: none;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.15);
+}
+.browser .browser-top {
+  background-color: #E7ECF2;
+  border: 6px solid #E7ECF2;
+  border-radius: 6px;
+  border-width: 2px;
+  border-radius: 2px 2px 0 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 52px;
+  margin: -5px auto;
+  box-sizing: border-box;
+}
+.browser .browser-top .circle {
+  border: 5px solid #D8D8D8;
+  border-radius: 5px;
+  margin-right: 2px;
+  display: inline-block;
+}
+.browser .browser-top .red-circle {
+  border-color: #E44054;
+}
+.browser .browser-top .yellow-circle {
+  border-color: #FFE372;
+}
+.browser .browser-top .green-circle {
+  border-color: #7ED321;
+}
+.browser .browser-top .arrow-buttons {
+  width: 8%;
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #E7ECF2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 2%;
+}
+.browser .browser-top .search-box {
+  height: 18px;
+  background-color: #ffffff;
+  border: 1px solid #E7ECF2;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 85%;
+  margin-left: 2.5%;
+}
+.circle-div {
+  margin-left: 3px;
+  margin-bottom: 2px;
+  display: block;
+}
+.browser-ui-block {
+  margin-top: 0.35em;
+  display: block;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+}
   </style>
+  <script>
+    function villaborghese() {
+  var x = document.getElementById("villaborghese");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    window.location.href = '#villaborghese';
+  } else {
+    x.style.display = "none";
+  }
+}
+  </script>
