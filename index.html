@@ -18,7 +18,7 @@
     <div class="Container Container--spaced">
         <div id="projects" class="Phones Phones--three">
           <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
-          <div class="Phone"><a onclick="villaborghese()" onload="villaborghese() , villaborghese()">villa borghese</a><img src="./img/villa.jpg"/>
+          <div onclick="villaborghese()" class="Phone"><a>villa borghese</a><img src="./img/villa.jpg"/>
             <div id="villaborghese"class="browser">
   
               <div class="browser-top">   
@@ -430,8 +430,9 @@ iframe {
 }
   </style>
   <script>
-    function villaborghese() {
   var x = document.getElementById("villaborghese");
+    x.style.display = 'none';
+    function villaborghese() {
   if (x.style.display === "none") {
     x.style.display = "block";
     window.location.href = '#villaborghese';
