@@ -1,6 +1,13 @@
-    <?php 
-require_once("../header.html")
-?>
+<head>
+<link rel="stylesheet" href="../jquery-ui-1.11.1.custom/jquery-ui.min.css">
+         <script src="../jquery-ui-1.11.1.custom/external/jquery/jquery.js"></script>
+         <script src="../jquery-ui-1.11.1.custom/jquery-ui.min.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+    $('#some-menu').load('some-local-path/menu.html');
+});
+</script>
 <div class="Container Container--spaced">
       <div id="projects" class="Phones Phones--three">
         <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
