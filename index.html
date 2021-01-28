@@ -1,4 +1,5 @@
 
+<title>Mier.dev</title>
 <div class="Header">
     <div class="Container Container--full Container--spread Header-container">
       <div class="Logo"></div>
@@ -17,10 +18,25 @@
     </div>
     <div class="Container Container--spaced">
         <div id="projects" class="Phones Phones--three">
-          <div class="Phone"><a target="_blank" href="https://www.kinechristinegodefroid.com/" >Kine christine godefroid</a><img src="./img/kine.png"/></div>
-          <div onclick="villaborghese()" class="Phone"><a>villa borghese</a><img src="./img/villa.jpg"/>
+          <div onclick="kine()" class="Phone"><a>Kine Christine Godefroid</a><img src="./img/kine.png"/>
+            <div id="kine" class="browser">
+              <div class="browser-top">   
+                <div class="circle-div">
+                  <div class="circle red-circle"></div>
+                  <div class="circle yellow-circle"></div>
+                  <div class="circle green-circle"></div>
+                </div>   <!-- END CIRCLE DIV -->
+                
+                <div class="browser-ui-block">
+                  <div class="arrow-buttons"></div>
+                  <div class="search-box"></div>
+                </div>   <!-- /END BROWSER UI BLOCK -->  
+              </div>  <!-- /END BROWSER TOP -->
+              <iframe src="https://www.kinechristinegodefroid.com/"></iframe>
+            </div>   <!-- /END BROWSER -->
+          </div>          
+            <div onclick="villaborghese()" class="Phone"><a>villa borghese</a><img src="./img/villa.jpg"/>
             <div id="villaborghese"class="browser">
-  
               <div class="browser-top">   
                 <div class="circle-div">
                   <div class="circle red-circle"></div>
@@ -433,14 +449,26 @@ iframe {
 }
   </style>
   <script>
+  var y = document.getElementById("kine");
   var x = document.getElementById("villaborghese");
     x.style.display = 'none';
+    y.style.display = 'none';
     function villaborghese() {
   if (x.style.display === "none") {
     x.style.display = "block";
+    y.style.display = "none";
     window.location.href = '#villaborghese';
   } else {
     x.style.display = "none";
+  }
+}
+  function kine() {
+  if (y.style.display === "none") {
+    y.style.display = "block";
+    x.style.display = "none";
+    window.location.href = '#kine';
+  } else {
+    y.style.display = "none";
   }
 }
   </script>
